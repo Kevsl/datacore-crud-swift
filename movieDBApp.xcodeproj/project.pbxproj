@@ -16,6 +16,7 @@
 		0AA12E8D2AC1A29F00A85883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA12E8B2AC1A29F00A85883 /* LaunchScreen.storyboard */; };
 		0AA12E9B2AC1A55C00A85883 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA12E9A2AC1A55C00A85883 /* CoreDataHelper.swift */; };
 		0AA12E9D2AC1AADF00A85883 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA12E9C2AC1AADF00A85883 /* AddController.swift */; };
+		0AA12E9F2AC1BDF900A85883 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA12E9E2AC1BDF900A85883 /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0AA12E8E2AC1A29F00A85883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA12E9A2AC1A55C00A85883 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0AA12E9C2AC1AADF00A85883 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		0AA12E9E2AC1BDF900A85883 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA12E9A2AC1A55C00A85883 /* CoreDataHelper.swift */,
+				0AA12E9E2AC1BDF900A85883 /* AlertHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				0AA12E822AC1A29E00A85883 /* ViewController.swift in Sources */,
 				0AA12E7E2AC1A29E00A85883 /* AppDelegate.swift in Sources */,
 				0AA12E9D2AC1AADF00A85883 /* AddController.swift in Sources */,
+				0AA12E9F2AC1BDF900A85883 /* AlertHelper.swift in Sources */,
 				0AA12E882AC1A29E00A85883 /* movieDBApp.xcdatamodeld in Sources */,
 				0AA12E802AC1A29E00A85883 /* SceneDelegate.swift in Sources */,
 			);

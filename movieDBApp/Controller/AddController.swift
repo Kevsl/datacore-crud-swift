@@ -95,7 +95,7 @@ extension AddController: UIImagePickerControllerDelegate, UINavigationController
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
-            self.movieIV.image = image
+            self.imageView.image = image
         }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -121,7 +121,7 @@ extension AddController:  PHPickerViewControllerDelegate {
                 newItem.loadObject(ofClass: UIImage.self) { image, error in
                     if let newImage = image as? UIImage {
                         DispatchQueue.main.async {
-                            self.movieIV.image = newImage
+                            self.imageView.image = newImage
                         }
                     }
                 }
