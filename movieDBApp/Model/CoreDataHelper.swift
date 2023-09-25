@@ -30,6 +30,34 @@ class CoreDataHelper{
         saveContext()
     }
     
+    func getCategories(_ completion: (([Category])->Void )?) {
+        let request : NSFetchRequest<Category> =
+        Category.fetchRequest()
+        
+        let sort: NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        
+        request.sortDescriptors = [sort]
+        
+        do {
+            let categories = try context.fetch(request)
+            completion?(categories)
+            
+        } catch{
+            print(error.localizedDescription)
+            completion?([])
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     
     func saveContext(){
         do{
