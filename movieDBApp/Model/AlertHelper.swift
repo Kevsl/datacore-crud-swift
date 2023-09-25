@@ -4,7 +4,7 @@ import UIKit
 
 class AlertHelper{
    
-    func alertAddCategory(_ controller: UIViewController,_ completion: ((String) -> Void)?){
+    func alertAddCategory(_ controller: UIViewController,_ completion: ((String?) -> Void)?){
         
         let alert = UIAlertController(title: "Catégorie", message:"Catégorie a ajouter" , preferredStyle: .alert)
         alert.addTextField{

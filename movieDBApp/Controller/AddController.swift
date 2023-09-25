@@ -29,6 +29,22 @@ class AddController: UIViewController {
 
        
     }
+  
+    @IBAction func addCategoryAction(_ sender: UIButton) {
+        
+        AlertHelper().alertAddCategory(self) { str in
+            if let newCategory = str {
+                CoreDataHelper.shared.addCategory(newCategory) { success in
+                    if success {
+                        self.updatePicker()
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
     
     @IBAction func openCamera(_ sender: UIButton) {
         present(imagePicker, animated: true, completion: nil)

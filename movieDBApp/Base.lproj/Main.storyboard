@@ -82,6 +82,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Add a Category"/>
+                                <connections>
+                                    <action selector="addCategoryAction:" destination="Pcq-5F-iR8" eventType="touchUpInside" id="9hi-ea-T87"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAN-mD-lcE">
                                 <rect key="frame" x="76" y="510" width="240" height="128"/>
